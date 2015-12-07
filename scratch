@@ -1,0 +1,25 @@
+Users
+  id
+  email
+  confirmation_token
+  confirmed_at
+
+Items
+  id
+  text
+  created_at
+  user_id
+
+
+Screens
+  # Signup
+  One email input which sends a confirmation token if user is not already present
+  If user is already present, user resends a message with one of the reminders
+
+
+Send a confirmation message when user signs up
+Send an item in sequence to the user every day at 12 midnight UTC
+  this email also has a link which allows the user to manage their list items
+
+User can send an email to 'inbox+uniqueuserid@simplereminder.com'
+  and this will add this item to their list
